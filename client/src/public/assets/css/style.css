@@ -1,0 +1,549 @@
+/* Outter most container */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 170px auto 45px;
+}
+
+.container>div {
+    display: inline-flex;
+    font-size: 2em;
+    color: #282828;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    background-image: url("../images/blkdragonscales");
+    background-repeat: repeat;
+    background-color: #000000;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+h1 {
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.5em;
+}
+
+a {
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+form {
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    background-color: #858585;
+    padding: 20px;
+    display: grid;
+}
+
+label {
+    font-size: .75em;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    grid-column: 1 / -1;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    grid-column: 1 / 3;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.content {
+    grid-column: 3 / -1;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>div:nth-child(1n) {
+    background-color: rgb(0, 0, 0);
+}
+
+.container>div:nth-child(3n) {
+    background-color: #bababa;
+}
+
+.container>div:nth-child(2n) {
+    background-color: #858585;
+}
+
+.container>div:nth-child(4n) {
+    background-color: #D4AF37;
+}
+
+/* newCharacter.html */
+
+/* div in newCharacter.html */
+
+.createdChar {
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    background-color: #858585;
+    padding: 10px;
+    width: 90%;
+}
+
+.character-name-button {
+    background-color: #858585;
+    border: none;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline-block;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+.character-name-input {
+    padding: 8px 25px;
+    margin-top: 12px;
+    font-size: .75em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    box-sizing: border-box;
+}
+
+/* login.html */
+
+/* class for the login button in login.html */
+
+.login-button {
+    background-color: #525252;
+    border: none;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline-block;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: .75em;
+    text-decoration: none;
+}
+
+.form {
+    grid-column: 4 / 11
+}
+
+/* createAccount.html */
+
+/* submit button in createAccount.html */
+
+.create-account-button {
+    background-color: #525252;
+    border: none;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline-block;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+/* temp.html */
+
+.wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.wrapper {
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    background-color: #525252;
+    color: #ccc;
+}
+
+.name-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-char-text {
+    font-size: .75em;
+    padding: 8px 25px;
+    border: 1px solid #ccc;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.char-name-button {
+    background-color: #858585;
+    border: none;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-left: 30px;
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.char-name {
+    font-size: .75em;
+    padding-right: 30px;
+    color: #000000;
+    background-color: #858585;
+    padding: 8px 35px;
+    margin-right: 30px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.create-character-button {
+    background-color: #858585;
+    border: none;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-left: 30px;
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.get-all-character-button {
+    background-color: #858585;
+    border: none;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    color: #000000;
+    padding: 8px 35px;
+    margin-left: 30px;
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.race {
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    grid-column: 1 / 5;
+    padding: 15px;
+    margin-left: 30px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.prof {
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    grid-column: 6 / 10;
+    padding: 15px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.hp {
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    grid-column: 11 / -1;
+    padding: 15px;
+    margin-right: 30px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.ability {
+    display: inline-flex;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.strength {
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.dexterity {
+    background-color: #858585;
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.constitution {
+    background-color: #858585;
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.intelligence {
+    background-color: #858585;
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.wisdom {
+    background-color: #858585;
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.charisma {
+    background-color: #858585;
+    max-height: 10em;
+    max-width: 10em;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+
+.proficiencies {
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    grid-column: 1 / 7;
+    grid-row: 4;
+    padding: 35px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+.equipment {
+    font-size: .75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    grid-column: 7 / -1;
+    grid-row: 4;
+    padding: 35px;
+    margin-right: 30px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    background-color: #858585;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+}
+    /*
+input[type=text], select {
+    padding: 8px 25px;
+    margin-top: 12px;
+    font-size: .75em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 8px 20px;
+    margin-top: 12px;
+    font-size: .75em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px 50px 20px 50px/50px 20px 50px 20px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 8px 20px;
+    margin-top: 12px;
+    font-size: .75em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+    box-sizing: border-box;
+}
+*/
+    /* media queries */
+    @media screen and (max-width: 480px) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 100px 50px auto 25px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+        }
+        .menu {
+            grid-row: 2;
+            grid-column: span 12;
+        }
+        .content {
+            grid-column: span 12;
+        }
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 200px 100px auto 75px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+        }
+        .menu {
+            grid-row: 2;
+            grid-column: span 12;
+        }
+        .content {
+            grid-column: span 12;
+        }
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 100px auto 25px;
+        }
+        .responsive {
+            max-width: auto;
+            height: 100px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+            border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+        }
+        .menu {
+            grid-column: 1 / 3;
+            border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+        }
+        .content {
+            grid-column: 3 / -1;
+            border-radius: 50px 20px 50px 20px/20px 50px 20px 50px;
+        }
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 200px 100px auto 75px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+        }
+        .menu {
+            grid-row: 2;
+            grid-column: span 12;
+        }
+        .content {
+            grid-column: span 12;
+        }
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 200px 100px auto 75px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+        }
+        .menu {
+            grid-row: 2;
+            grid-column: span 12;
+        }
+        .content {
+            grid-column: span 12;
+        }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .container {
+            height: 100%;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 200px 100px auto 75px;
+        }
+        .header {
+            grid-row: 1;
+            grid-column: span 12;
+        }
+        .menu {
+            grid-row: 2;
+            grid-column: span 12;
+        }
+        .content {
+            grid-column: span 12;
+        }
+    }

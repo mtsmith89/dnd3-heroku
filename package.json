@@ -1,0 +1,32 @@
+{
+  "name": "dnd-project3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "server": "node server.js",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && yarn install;",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": "https://github.com/TeamGamer/dnd-project3.git",
+  "author": "Stacy M <geekgirlbeta@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.2.4",
+    "yarn": "^1.9.2"
+  }
+}
